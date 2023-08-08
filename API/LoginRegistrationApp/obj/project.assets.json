@@ -688,11 +688,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Documents\\MyProjects\\ASP.NET\\LoginRegistrationApp\\LoginRegistrationApp.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\Documents\\MyProjects\\ASP.NET\\login\\API\\LoginRegistrationApp\\LoginRegistrationApp.csproj",
       "projectName": "LoginRegistrationApp",
-      "projectPath": "C:\\Users\\HP\\Documents\\MyProjects\\ASP.NET\\LoginRegistrationApp\\LoginRegistrationApp.csproj",
+      "projectPath": "C:\\Users\\HP\\Documents\\MyProjects\\ASP.NET\\login\\API\\LoginRegistrationApp\\LoginRegistrationApp.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Documents\\MyProjects\\ASP.NET\\LoginRegistrationApp\\obj\\",
+      "outputPath": "C:\\Users\\HP\\Documents\\MyProjects\\ASP.NET\\login\\API\\LoginRegistrationApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",

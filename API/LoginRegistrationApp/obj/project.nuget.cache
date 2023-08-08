@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tfzRDl80C7AwIi8bfc8yOf+hT3PA0dNcN00uc/KrPJxH3vTbgofzNpFpzLHRiymr8W414uXLwDDPEOZA03qd6Q==",
+  "dgSpecHash": "f1QpKlIihQil8YcBDwkuN0Kq3XyG+4RRhjEFeRmM7nbVRDq8JaY9brjefoCRkBvIKsRw0qI9vYYOgnpxTmjdyQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HP\\Documents\\MyProjects\\ASP.NET\\LoginRegistrationApp\\LoginRegistrationApp.csproj",
+  "projectFilePath": "C:\\Users\\HP\\Documents\\MyProjects\\ASP.NET\\login\\API\\LoginRegistrationApp\\LoginRegistrationApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
