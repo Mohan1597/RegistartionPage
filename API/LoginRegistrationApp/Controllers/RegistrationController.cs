@@ -66,7 +66,7 @@ namespace LoginRegistrationApp.Controllers
             if (dt.Rows.Count > 0)
             {
                 // Authentication successful
-                return "User Excist";
+                return "User Exist";
             }
             else
             {

@@ -30,6 +30,7 @@ const Login = () =>
           } else {
             const data = await response.text();
             console.log(data); // This will log the plain text response
+            alert(data);
           }
         } else if (response.status === 409) {
           // Handle email exists
