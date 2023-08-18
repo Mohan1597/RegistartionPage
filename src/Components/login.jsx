@@ -31,7 +31,7 @@ const Login = () => {
           } else {
             const data = await response.text();
             console.log(data); // This will log the plain text response
-            alert(data);
+            alert("Valid User");
           }
         } else if (response.status === 409) {
           // Handle email exists

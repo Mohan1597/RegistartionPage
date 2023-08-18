@@ -14,14 +14,33 @@ const SignUp = () => {
     const [name,setName]=useState("");
     const [password,setPassword]=useState("");
 
-    const FetchLoginDetails = async (emailid) => {
-      const requestoptions = {
-        method: 'GET',
-        headers: { 'Content-Type': 'application/json' },
+    const [UserDetails, setUserDetails] = useState();
+
+    useEffect(() => {
+      const userDetailsObject = {
+        name: name,
+        emailid: emailid,
+        password: password
       };
+      setUserDetails(userDetailsObject);
+      console.log(userDetailsObject);
+    }, [emailid, name, password]);
+
+
+    const SignUp = async () => {
+      const requestOptions = {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          "name": name,
+          "emailid": emailid,
+          "password": password
+        })
+      };
+      
     
       try {
-        const response = await fetch(`https://localhost:7061/api/Registration/login?emailid=${emailid}&password=${password}`, requestoptions);
+        const response = await fetch('https://localhost:7061/api/Registration/registration', requestOptions);
     
         if (response.ok) {
           const contentType = response.headers.get('content-type');
@@ -31,19 +50,22 @@ const SignUp = () => {
           } else {
             const data = await response.text();
             console.log(data); // This will log the plain text response
-            alert(data);
+            alert(" User Successfuully Created");
           }
         } else if (response.status === 409) {
           // Handle email exists
         } else if (response.status === 400) {
           // Handle validation error
         } else {
+          console.clear();
+          console.log(UserDetails)
           throw new Error("Something went wrong");
         }
       } catch (error) {
         console.error("Fetch error:", error);
       }
     };
+    
     
     const handlechangeName= (event) =>{
         setName(event.target.value);
@@ -61,8 +83,8 @@ const SignUp = () => {
       
       
     const SigninButton = () =>{
-        console.clear();
-        FetchLoginDetails(emailid);
+        
+        SignUp();
       }
 
     const navigate = useNavigate();

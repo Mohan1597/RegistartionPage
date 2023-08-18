@@ -29,7 +29,7 @@ namespace LoginRegistrationApp.Controllers
             SqlConnection con = new SqlConnection(_configuration.GetConnectionString("ToysCon").ToString());
 
 
-            SqlCommand cmd = new SqlCommand("insert into userdetails(id, name, emailid, password) values('" + Registration.id + "','" + Registration.name + "' , '" + Registration.emailid + "' ,'" + Registration.password + "')", con);
+            SqlCommand cmd = new SqlCommand("insert into userdetails( name, emailid, password) values('" + Registration.name + "' , '" + Registration.emailid + "' ,'" + Registration.password + "')", con);
 
 
             con.Open();
